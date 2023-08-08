@@ -1,0 +1,55 @@
+Feature: This file contains test scenarios of add employee and validating the demoQA application
+
+Background: 
+Given Login with admin user
+Then Go to PIM Tab
+Then hit Add Employee section
+When hit save button
+Then search the user 
+
+
+				Scenario: 1.Validate New employee getting created and searched in HRMS System
+						Then enter user details
+						Then validate user gettting searched
+
+				Scenario: 2.Validate employee not getting created if mandatory fields missing.
+						Then don’t enter all mandatory user details
+						Then validate the user not getting searched 
+
+
+				Scenario: 3.Validate demoQA up and running
+				Given hit the URI
+				
+						Then validate response of the application
+					
+				Scenario: 4.Validate demoQA up and running
+				Given hit the URI
+				
+						Then validate the response "201" of the application
+				
+				
+				Scenario: 5.Validate demoQA up and running
+				Given hit the URI
+				
+						Then validate the response "202" of the application
+				
+			  Scenario: 6.Validate demoQA up and running
+			  Given hit the URI
+			  
+						Then validate title "Learning JavaScript Design Patterns" and pages "254" of application 
+	
+				Scenario: 7.Validate demoQA up and running
+				Given hit the URI
+				
+						Then validate value for "books[0].title" is "Git Pocket Guide"
+						Then validate value for "books[2].isbn" is "9781449337711"
+						Then validate value for "books[0].author" is "Richard E. Silverman"
+						Then validate value for "books[0].publisher" is "O'Reilly Media"
+						Then validate value for "books[1].title" is "Learning JavaScript Design Patterns"
+
+				Scenario: 8.Validate demoQA up and running
+				Given hit the URI
+				
+						Then validate value for attribute "title" is "Git Pocket Guide" present in response 
+						Then validate value for attribute "author" is "Axel Rauschmayer" present in response 
+	

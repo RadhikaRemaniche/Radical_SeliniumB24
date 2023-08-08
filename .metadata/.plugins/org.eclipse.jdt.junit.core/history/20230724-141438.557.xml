@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerApplicationUPTest" project="Radical_cucumberB24" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.ApplicationUP.RunnerApplicationUPTest" time="1.932">
+    <testsuite name="Validate demoQA application data" time="1.932">
+      <testcase name="1.Validate demoQA up and running" classname="Validate demoQA application data" time="1.932"/>
+    </testsuite>
+  </testsuite>
+</testrun>

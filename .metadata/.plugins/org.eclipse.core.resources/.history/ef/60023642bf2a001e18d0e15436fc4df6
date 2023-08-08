@@ -1,0 +1,5 @@
+Feature: Validate get request
+
+Scenario: 1.Validate demoQA up and running
+	Given hit the URI
+	Then validate title "Git Pocket Guide-Advanced" and pages "234" of application 

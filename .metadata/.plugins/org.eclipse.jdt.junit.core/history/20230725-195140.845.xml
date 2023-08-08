@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerGetValidateTest" project="Radical_cucumberB24" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.GetValidateValuesWithParamSD.RunnerGetValidateTest" time="4.195">
+    <testsuite name="Validate get request" time="4.195">
+      <testcase name="1.Validate demoQA up and running" classname="Validate get request" time="2.872"/>
+      <testcase name="2.Validate demoQA up and running" classname="Validate get request" time="0.663"/>
+      <testcase name="3.Validate demoQA up and running" classname="Validate get request" time="0.66"/>
+    </testsuite>
+  </testsuite>
+</testrun>

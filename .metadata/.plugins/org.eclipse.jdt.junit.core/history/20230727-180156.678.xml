@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerGetValidateTest" project="Radical_cucumberB24" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.GetValidateValuesWithParamSD.RunnerGetValidateTest" time="2.976">
+    <testsuite name="Validate get request" time="2.976">
+      <testcase name="1.Validate demoQA up and running" classname="Validate get request" time="2.976">
+        <failure>
+          <expected>254</expected>
+          <actual>28884</actual>
+          org.junit.ComparisonFailure: expected:&lt;2[5]4&gt; but was:&lt;2[888]4&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at com.GetValidateValuesWithParamSD.GetValidation.validate_title_and_pages_of_application(GetValidation.java:29)&#13;
+	at ✽.validate title "Learning JavaScript Design Patterns" and pages "28884" of application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_cucumberB24/src/test/resources/com/GetValidateValuesWithParamFF/ValidateGetRequest.feature:6)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

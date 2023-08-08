@@ -1,0 +1,50 @@
+package POM.login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
+
+import POM.common.BasePage;
+
+public class LoginPage extends BasePage{
+	
+	String xpathForUserNameString = "//fddddddsk";
+	String xpathForUserpwdString = "//fdafkdjsalfjdsk";
+
+	
+	public void enterUserName(WebDriver driver , String userName) {
+		System.out.println("entering "+ userName);
+		Reporter.log("entering "+ userName);
+		super.enterText(driver,xpathForUserNameString, userName);
+	}
+	
+	public void enterUserPwd(WebDriver driver , String userPwd) {
+		System.out.println("entering "+ userPwd);
+		super.enterText(driver,xpathForUserNameString, userPwd);
+	}
+	
+	public void clearUserName(WebDriver driver) {
+		driver.findElement(By.xpath("//fsdaf")).clear();
+	}
+	
+	
+	public void clickLoginButton(WebDriver driver) {
+		driver.findElement(By.xpath("//loginbuttton")).click();
+	}
+	
+	
+	public String getTextFromUserNameField(WebDriver driver) {
+		return driver.findElement(By.xpath("//usernamefieldn")).getText();
+	}
+	
+	public void login(WebDriver driver , String userName, String pwd) {
+		this.enterUserName(driver, userName);
+		this.enterUserPwd(driver, pwd);
+		this.clickLoginButton(driver);
+		
+	}
+	
+	public String getTextFromUserNameLabel(WebDriver driver) {
+		return driver.findElement(By.xpath("//usernamefieldn")).getText();
+	}
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite2">
+	<test name="Module1">
+		<groups>
+			<run>
+				<include name="adv" />
+				<include name="basic" />
+				<include name="exer" />
+				<include name="practice" />
+			</run>
+		</groups>
+		<classes>
+			<class name="advanced.MyTableGridAuto" />
+			<class name="advanced.MyShifttabDemo" />
+
+			<class name="basic.MyDragandDrop" />
+			<class name="basic.MyFileAttachment" />
+			<class name="basic.MyFileDownloadChrome" />
+			<class name="basic.SeliniumTest_Chrome" />
+			<class name="basic.SeliniumTest_Edge" />
+			<class name="basic.SeliniumTest_Firefox" />
+
+			<class name="exercise.AlertBoxTest" />
+			<class name="exercise.SkillsTestCase" />
+			<class name="exercise.SkillTest2" />
+
+			<class name="Practice_Programs.B24TestForm" />
+			<class name="Practice_Programs.B24SkillTestCase" />
+
+
+		</classes>
+	</test>
+
+</suite>

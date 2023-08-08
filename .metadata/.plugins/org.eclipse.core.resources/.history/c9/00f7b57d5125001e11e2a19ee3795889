@@ -1,0 +1,41 @@
+package PIM_Page;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ReadExcelSheet1{
+	
+	XSSFWorkbook wb;
+	XSSFSheet sheet;
+	
+	
+	public ReadExcelSheet1(String excelpath,int sheetNum) throws IOException {
+		File srcfile = new File(excelpath);
+		FileInputStream fis = new FileInputStream(srcfile);
+		
+		//read Excel file 
+		wb = new XSSFWorkbook(fis);
+		
+		//get the first sheet from workbook 
+		sheet = wb.getSheetAt(sheetNum);
+		wb.close();// close workbook after getting the file 
+	}
+	public String getCellData(int sheetNumber, int row, int column) {
+		String data0 ;
+		try {
+			data0 = sheet.getRow(row).getCell(column).getStringCellValue();
+		}catch(Exception e ) {
+			data0="";
+		}
+		return data0;
+	}
+	public int getRowCount(int sheetNumber) {
+		int rowCNT = wb.getSheetAt(sheetNumber).getLastRowNum();
+		return rowCNT;
+		
+	}
+}

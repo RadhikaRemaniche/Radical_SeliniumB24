@@ -1,0 +1,115 @@
+package PIM_Page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+
+import Login_Page.encap_loginpage;
+
+public class useroperation_adduser {
+
+	public void add_user(encap_loginpage obj2, WebDriver driver) {
+		boolean testResult = true;
+		String errorMessage= " ";
+		// click on PIM
+
+		driver.findElement(By.xpath("(//*[name()='svg'][@role='presentation'])[3]")).click();
+		// click on add to add new employee
+		driver.findElement(By.xpath("//button[normalize-space()='Add']")).click();
+
+		driver.findElement(By.xpath("//span[@class='oxd-switch-input oxd-switch-input--active --label-right']"))
+				.click();
+		driver.findElement(By.xpath("//label[normalize-space()='Enabled']")).click();
+
+			if(!obj2.getFirst_name().equals(null)) {
+				try {
+					driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys(obj2.getFirst_name());
+
+				}catch (Exception e) {
+					testResult = false;
+					System.out.println(" First name field is missing ");
+					errorMessage = errorMessage + " First name field is missing ";
+			}
+			}
+				
+				
+				if(!obj2.getMiddle_name().equals(null)) {
+					try {
+						driver.findElement(By.xpath("//input[@placeholder='Middle Name']")).sendKeys(obj2.getMiddle_name());
+
+					}catch (Exception e) {
+						testResult = false;
+						System.out.println(" Middle name field is missing ");
+						errorMessage = errorMessage + " Middle name field is missing ";
+				}
+					
+				}
+					
+					
+					if(!obj2.getLast_name().equals(null)) {
+						try {
+							driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys(obj2.getLast_name());
+
+						}catch (Exception e) {
+							testResult = false;
+							System.out.println(" Last name field is missing ");
+							errorMessage = errorMessage + " Last name field is missing ";
+					}
+					}
+						
+						
+						if(obj2.getEmp_id() != 0) {
+							try {
+								driver.findElement(By.xpath(
+										"//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']"))
+										.sendKeys(String.valueOf(obj2.getEmp_id()));// coverts integer to string and sends the value to the
+																					// webdriver textbox
+							}catch (Exception e) {
+								testResult = false;
+								System.out.println("Employee ID field is missing ");
+								errorMessage = errorMessage + " Employee ID field is missing ";
+						}		
+					
+						}
+					
+							if(!obj2.getAdduser_uname().equals(null) ) {
+								try {
+									driver.findElement(By.xpath(
+											"// body/div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='orangehrm-card-container']/form[@class='oxd-form']/div[@class='orangehrm-employee-container']/div[@class='orangehrm-employee-form']/div[@class='oxd-form-row']/div[1]/div[1]/div[1]/div[2]/input[1]"))
+											.sendKeys(obj2.getAdduser_uname());
+								}catch (Exception e) {
+									testResult = false;
+									System.out.println("Usename field is missing ");
+									errorMessage = errorMessage + " Username field is missing ";
+							}
+							}
+								if(!obj2.getAdduser_pwd().equals(null)) {
+									try {
+										driver.findElement(By.xpath(
+												"//div[@class='oxd-grid-item oxd-grid-item--gutters user-password-cell']//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@type='password']"))
+												.sendKeys(obj2.getAdduser_pwd());
+									}catch (Exception e) {
+										testResult = false;
+										System.out.println("Password field is missing ");
+										errorMessage = errorMessage + " password field is missing ";
+								}
+								}
+									
+									
+								if(!obj2.getAdduser_confirmpwd().equals(null)) {
+									try {
+										driver.findElement(By.xpath(
+												"//div[@class='oxd-grid-item oxd-grid-item--gutters']//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@type='password']"))
+												.sendKeys(obj2.getAdduser_confirmpwd());
+
+									}catch (Exception e) {
+										testResult = false;
+										System.out.println("Confirm Password field is missing ");
+										errorMessage = errorMessage + " Confirm password field is missing ";
+									}	
+								}
+								driver.findElement(By.xpath("//button[normalize-space()='Save']")).click();
+								System.out.println("Test execution is complete and the result is  : " + testResult);
+								Assert.assertFalse(testResult, errorMessage);
+		}					
+	}

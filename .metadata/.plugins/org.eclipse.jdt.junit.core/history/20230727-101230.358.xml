@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerFileForAllTest" project="RestAssuredALLInOneProject" tests="8" started="8" failures="3" errors="0" ignored="0">
+  <testsuite name="com.aLLInOne.RunnerFileForAllTest" time="5.429">
+    <testsuite name="This file contains test scenarios of add employee and validating the demoQA application" time="5.429">
+      <testcase name="1.Validate New employee getting created and searched in HRMS System" classname="This file contains test scenarios of add employee and validating the demoQA application" time="1.852"/>
+      <testcase name="2.Validate employee not getting created if mandatory fields missing." classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.424"/>
+      <testcase name="3.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.451"/>
+      <testcase name="4.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.473">
+        <failure>
+          <expected>201</expected>
+          <actual> 200</actual>
+          org.junit.ComparisonFailure: expected:&lt;[201]&gt; but was:&lt;[ 200]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_the_response_of_the_application(StepDefFileForAll.java:92)&#13;
+	at ✽.validate the response "201" of the application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:25)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="5.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.415">
+        <failure>
+          <expected>202</expected>
+          <actual> 200</actual>
+          org.junit.ComparisonFailure: expected:&lt;[202]&gt; but was:&lt;[ 200]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_the_response_of_the_application(StepDefFileForAll.java:92)&#13;
+	at ✽.validate the response "202" of the application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:29)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="6.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.895">
+        <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:87)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:42)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:53)&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_title_and_pages_of_application(StepDefFileForAll.java:101)&#13;
+	at ✽.validate title "Learning JavaScript Design Patterns" and pages "254" of application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:32)&#13;
+&#13;
+</failure>
+      </testcase>
+      <testcase name="7.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.482"/>
+      <testcase name="8.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.437"/>
+    </testsuite>
+  </testsuite>
+</testrun>

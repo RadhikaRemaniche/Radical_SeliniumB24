@@ -1,0 +1,69 @@
+package TestCases.login;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import POM.login.LoginPage;
+import lib.B24ReadExcelUtility;
+import lib.DriverFactory;
+import lib.PropertiesOperation;
+
+public class LoginScenarios {
+	
+	LoginPage login = new LoginPage();
+	DriverFactory factory = new DriverFactory();
+
+	@Test
+	public void validateYouCanClearUserNameField() throws IOException {
+		
+		WebDriver driver = factory.getDriver(PropertiesOperation.getPropValue("browser"));
+		driver.get(PropertiesOperation.getPropValue("uri"));
+		login.enterUserName(driver, "Admin");
+		login.clearUserName(driver);
+		String actualValueString = login.getTextFromUserNameField(driver);
+		
+		Assert.assertEquals(false, false);	
+	}
+	
+	@Test(dataProvider = "loginData")
+	public void loginWithMulipleUserScenarios(String userName, String pwd) throws IOException {
+		WebDriver driver = factory.getDriver(PropertiesOperation.getPropValue("browser"));
+		driver.get(PropertiesOperation.getPropValue("uri"));
+		login.login(driver, userName, pwd);
+		//validate you are succcessfully login
+		driver.quit();
+	}
+	
+	@DataProvider(name="loginData")
+	public Object[][] getLoginData() throws IOException {
+		B24ReadExcelUtility excel = new B24ReadExcelUtility("pathof excel",0);
+		//
+		return null;
+	}
+	
+	@Test
+	public void addEmployeeWithMissingMandatroyFieldAndValidateError() throws IOException {
+		DriverFactory factory = new DriverFactory();
+		WebDriver driver = factory.getDriver(PropertiesOperation.getPropValue("browser"));
+		driver.get(PropertiesOperation.getPropValue("uri"));
+		LoginPage login = new LoginPage();
+		login.login(driver, "Admin", "admin123");
+	}
+	
+	@Test
+	public void validateUserNamelabelhaveUsernameValue() throws IOException {
+		WebDriver driver = factory.getDriver(PropertiesOperation.getPropValue("browser"));
+		driver.get(PropertiesOperation.getPropValue("uri"));
+		String actualValueString = login.getTextFromUserNameLabel(driver);
+		Assert.assertEquals(false, false);	
+		}
+	
+	
+	
+}

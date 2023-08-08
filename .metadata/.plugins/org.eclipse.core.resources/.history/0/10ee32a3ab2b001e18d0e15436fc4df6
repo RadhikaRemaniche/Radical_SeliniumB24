@@ -1,0 +1,53 @@
+package com.aLLInOne;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDefFileForAll {
+
+	@Given("Login with admin user")
+	public void login_with_admin_user() {
+		System.out.println("Login with admin user");
+	}
+
+	@When("Go to PIM Tab")
+	public void go_to_pim_tab() {
+		System.out.println("Go to PIM Tab");
+	}
+
+	@Then("hit Add Employee section")
+	public void hit_add_employee_section() {
+		System.out.println("hit Add Employee section");
+	}
+
+	@When("hit save button")
+	public void hit_save_button() {
+		System.out.println("hit save button");
+	}
+
+	@Then("search the user")
+	public void search_the_user() {
+		System.out.println("search the user");
+	}
+
+	@Given("enter user details")
+	public void enter_user_details() {
+		System.out.println("enter user details");
+	}
+
+	@Then("validate user gettting searched")
+	public void validate_user_gettting_searched() {
+		System.out.println("validate user gettting searched");
+	}
+
+	@Given("don’t enter all mandatory user details")
+	public void don_t_enter_all_mandatory_user_details() {
+		System.out.println("don’t enter all mandatory user details");
+	}
+
+	@Then("validate the user not getting searched")
+	public void validate_the_user_not_getting_searched() {
+		System.out.println("validate the user not getting searched");
+	}
+}

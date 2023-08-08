@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerApplicationUPTest" project="Radical_cucumberB24" tests="3" started="3" failures="0" errors="3" ignored="0">
+  <testsuite name="com.ApplicationUP.RunnerApplicationUPTest" time="2.567">
+    <testsuite name="Validate demoQA application data" time="2.567">
+      <testcase name="1.Validate demoQA up and running" classname="Validate demoQA application data" time="1.715">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'validate response of  "200" the application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("validate response of  {string} the application")
+public void validate_response_of_the_application(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="2.Validate demoQA up and running" classname="Validate demoQA application data" time="0.423">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'validate response of "201" the application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("validate response of {string} the application")
+public void validate_response_of_the_application(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="3.Validate demoQA up and running" classname="Validate demoQA application data" time="0.429">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'validate response of "203" the application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("validate response of {string} the application")
+public void validate_response_of_the_application(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

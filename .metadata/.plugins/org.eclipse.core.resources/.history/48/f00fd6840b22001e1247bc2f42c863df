@@ -1,0 +1,60 @@
+package Login_Page;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
+
+import PIM_Page.useroperation_adduser;
+
+
+public class Validate_loginPage {
+
+	@Test
+	public void TestCase1() throws InterruptedException {
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("-----allow--remote--origins-----");
+		options.addArguments("-----disable--notifications-----");
+
+		System.out.println("Launching Browser");
+		ChromeDriver driver = new ChromeDriver(options);
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+
+		encap_loginpage encap = new encap_loginpage();
+		useroperation_loginpage user = new useroperation_loginpage();
+		useroperation_adduser addition = new useroperation_adduser();	
+		
+		
+		encap.setUsername("Admin");
+		encap.setPassword("admin123");
+		
+		
+//		encap.setUserrole("Admin");
+//		encap.setEmp_name("Radhika Remaniche");
+//		
+//		//encap.setStatus("Enabled");
+//		encap.setUsername_New("Radhika Remaniche");
+//		
+//		encap.setPassword_New("Jktyre123$");
+//		encap.setConfirm_password("Jktyre123$");
+//		
+		encap.setFirst_name("");
+		encap.setMiddle_name("");
+		encap.setLast_name("");
+		encap.setEmp_id(-1);
+		encap.setAdduser_uname("");
+		encap.setAdduser_pwd("");
+		encap.setAdduser_confirmpwd("");
+		
+		
+		
+		
+		user.create_usernameandPassword(encap, driver);		
+		addition.add_user(encap, driver);
+	}
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerGetValidateTest" project="Radical_cucumberB24" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.GetValidateValuesWithParamSD.RunnerGetValidateTest" time="2.501">
+    <testsuite name="Validate get request" time="2.501">
+      <testcase name="1.Validate demoQA up and running" classname="Validate get request" time="2.501">
+        <failure>java.lang.AssertionError&#13;
+	at org.junit.Assert.fail(Assert.java:87)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:42)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:53)&#13;
+	at com.GetValidateValuesWithParamSD.GetValidation.validate_title_and_pages_of_application(GetValidation.java:24)&#13;
+	at ✽.validate title "Learning JavaScript Design Patterns" and pages "254" of application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_cucumberB24/src/test/resources/com/GetValidateValuesWithParamFF/ValidateGetRequest.feature:5)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

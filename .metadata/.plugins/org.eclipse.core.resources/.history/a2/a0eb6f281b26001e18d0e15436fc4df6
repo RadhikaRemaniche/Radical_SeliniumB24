@@ -1,0 +1,58 @@
+package TestCases.PIM;
+
+import org.testng.annotations.Test;
+
+public class AddEmployee {
+	
+	@Test
+	public void addEmpMandatoryFieldSuccess() {
+		
+	}
+
+	@Test
+	public void addEmpAllFieldSuccess() {
+
+	}
+
+	@Test
+	public void addEmpEmptyFieldError() {
+
+	}
+
+	@Test
+	public void addEmpSaveButtonSuccess() {
+
+	}
+
+	@Test
+	public void addEmpCancelButtonSuccess() {
+
+	}
+	@Test 
+	public void addEmpFieldsMaxLength() {
+		
+	}
+	@Test 
+	public void addEmpFieldsMinimumLength() {
+		
+	}
+	@Test 
+	public void addEmpConfirmPasswordValidation() {
+		
+	}
+	@Test 
+	public void addEmpAsetrikValidation() {
+		
+	}
+	@Test 
+	public void addEmpPageTimeOutValidation(){
+		
+	}
+	@Test 
+	public void addEmpUploadPhotoValidation(){
+		
+	}
+	public void addEmpPhotoDimensionsValidation() {
+	
+	}
+}

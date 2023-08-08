@@ -1,0 +1,122 @@
+package com.aLLInOne;
+
+import java.util.List;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class StepDefFileForAll {
+	WebDriver driver;
+	Response response;
+	
+	@Given("Login with admin user")
+	public void login_with_admin_user() {
+		
+//		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+//	   driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+//	   driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123"); 
+//	   driver.findElement(By.xpath("//button[normalize-space()='Login']")).click(); 
+	    System.out.println("Login with admin user");
+
+	}
+
+	@Then("Go to PIM Tab")
+	public void go_to_pim_tab() {
+//		driver.findElement(By.xpath("//a[@class='oxd-main-menu-item active toggle']")).click(); 
+	    System.out.println("Go to PIM Tab");
+
+
+	}
+
+	@Then("hit Add Employee section")
+	public void hit_add_employee_section() {
+//		 driver.findElement(By.xpath("//a[normalize-space()='Add Employee']")).click(); 
+	    System.out.println("hit Add Employee section");
+
+	}
+	
+	@Then("enter user details")
+	public void enter_user_details() {
+	    System.out.println("Enter user details");
+	}
+	@When("hit save button")
+	public void hit_save_button() {
+	   System.out.println("Hit save button ");
+	}
+
+	@Then("search the user")
+	public void search_the_user() {
+	   System.out.println("Search the user ");
+	}
+
+	@Then("validate user gettting searched")
+	public void validate_user_gettting_searched() {
+		   System.out.println("validate user gettting searched");
+
+	}
+	
+	@Then("don’t enter all mandatory user details")
+	public void don_t_enter_all_mandatory_user_details() {
+	   System.out.println("don’t enter all mandatory user details");
+	}
+
+	@Then("validate the user not getting searched")
+	public void validate_the_user_not_getting_searched() {
+		   System.out.println("validate the user not getting searched");
+
+	}
+
+	@Given("hit the URI")
+	public void hit_the_uri() {
+		response= RestAssured.get("https://demoqa.com/BookStore/v1/Books");
+		System.out.println("Get the response");
+	}
+
+	@Then("validate response of the application")
+	public void validate_response_of_the_application() {
+	    response.then().log().all();
+	    String actualStatusCode = ""+response.getStatusCode();
+	    String expectedStatusCode = "200";
+	    Assert.assertEquals(expectedStatusCode, actualStatusCode);
+	}
+
+	@Then("validate the response {string} of the application")
+	public void validate_the_response_of_the_application(String statusCode) {
+	    response.then().log().all();
+	    String actualStatusCode = " "+ response.getStatusCode();
+	    Assert.assertEquals(statusCode, actualStatusCode);
+
+	}
+
+	@Then("validate title {string} and pages {string} of application")
+	public void validate_title_and_pages_of_application(String title, String pagenumbers) {
+	    String data= response.getBody().asString();
+	    System.out.println("All Data==="+data);
+	    String actualString = response.getBody().jsonPath().getString("books[3].title");
+	    Assert.assertTrue(actualString.equals(title));
+	    
+	    int pagesInt= response.getBody().jsonPath().getInt("books[2].pages");
+	    String pagesString = ""+ pagesInt;
+	    Assert.assertEquals(pagesString,pagenumbers );
+	}
+
+	@Then("validate value for {string} is {string}")
+	public void validate_value_for_is(String string1, String string2) {
+		String actualString = response.getBody().jsonPath().getString(string1);
+		Assert.assertEquals(actualString, string2);
+	   
+	}
+
+	@Then("validate value for attribute {string} is {string} present in response")
+	public void validate_value_for_attribute_is_present_in_response(String string1, String expvalue) {
+	    List<Object> allItems = response.getBody().jsonPath().getList("books" +string1);
+	    System.out.println("==="+allItems.toString());
+	    Assert.assertTrue(allItems.contains(expvalue));	    
+	}
+	
+}

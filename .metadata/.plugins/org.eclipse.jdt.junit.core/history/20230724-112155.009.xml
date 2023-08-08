@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerBasicHRMSTest (1)" project="Radical_cucumberB24" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.basic1.RunnerBasicHRMSTest" time="0.186">
+    <testsuite name="This file contains test scenarios of add employee" time="0.186">
+      <testcase name="1.Validate New employee getting created and searched in HRMS System" classname="This file contains test scenarios of add employee" time="0.177"/>
+      <testcase name="2.Validate employee not getting created if mandatory fields missing." classname="This file contains test scenarios of add employee" time="0.009"/>
+    </testsuite>
+  </testsuite>
+</testrun>

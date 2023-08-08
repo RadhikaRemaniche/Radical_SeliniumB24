@@ -1,0 +1,30 @@
+package PIM_Page;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import Login_Page.encap_loginpage;
+
+public class useroperation_adduser {
+
+	public void add_user(encap_loginpage obj2, WebDriver driver) {
+		// click on PIM
+
+		driver.findElement(By.xpath("(//*[name()='svg'][@role='presentation'])[3]")).click();
+		// click on add to add new employee
+		driver.findElement(By.xpath("//button[normalize-space()='Add']")).click();
+
+		// add user / employee
+		driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys(obj2.getFirst_name());
+		driver.findElement(By.xpath("//input[@placeholder='Middle Name']")).sendKeys(obj2.getMiddle_name());
+		driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys(obj2.getLast_name());
+		driver.findElement(By.xpath(
+				"//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@class='oxd-input oxd-input--active']"))
+				.sendKeys(String.valueOf(obj2.getEmp_id()));// coverts integer to string and sends the value to the
+															// webdriver textbox
+		driver.findElement(By.xpath("//span[@class='oxd-switch-input oxd-switch-input--active --label-right']"))
+				.click();
+		driver.findElement(By.xpath("// body/div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='orangehrm-card-container']/form[@class='oxd-form']/div[@class='orangehrm-employee-container']/div[@class='orangehrm-employee-form']/div[@class='oxd-form-row']/div[1]/div[1]/div[1]/div[2]/input[1]")).
+	}
+
+}

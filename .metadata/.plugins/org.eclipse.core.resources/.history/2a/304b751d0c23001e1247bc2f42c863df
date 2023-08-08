@@ -1,0 +1,15 @@
+package PIM_Page;
+
+import org.testng.annotations.DataProvider;
+
+public class DataScript2 {
+
+	
+	@DataProvider(name="RetrievingDataFromExcel")
+	public Object[][] getadduser_page(){
+		Object[][] adduser_page = new Object[5][8];
+		return getadduser_page();
+		
+	}
+	
+}

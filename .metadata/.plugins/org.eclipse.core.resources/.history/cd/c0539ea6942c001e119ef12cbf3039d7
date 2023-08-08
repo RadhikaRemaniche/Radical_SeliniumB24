@@ -1,0 +1,5 @@
+Feature: To validate add employee
+
+Scenarios: 1. validate the employee 
+			Given hit the URI
+			Then validate getting all employee data 

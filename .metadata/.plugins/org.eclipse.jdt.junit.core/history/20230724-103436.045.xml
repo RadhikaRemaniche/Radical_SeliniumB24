@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerBasicHRMSTest (1)" project="Radical_cucumberB24" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="com.basic1.RunnerBasicHRMSTest" time="0.335">
+    <testsuite name="This file contains test scenarios of add employee" time="0.335">
+      <testcase name="1.Validate New employee getting created and searched in HRMS System" classname="This file contains test scenarios of add employee" time="0.315">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'Login with admin user' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("Login with admin user")
+public void login_with_admin_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Go to PIM Tab")
+public void go_to_pim_tab() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hit Add Employee section")
+public void hit_add_employee_section() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enter user details")
+public void enter_user_details() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hit save button")
+public void hit_save_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("search the user")
+public void search_the_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("validate user gettting searched")
+public void validate_user_gettting_searched() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="2.Validate employee not getting created if mandatory fields missing." classname="This file contains test scenarios of add employee" time="0.019">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'Login with admin user' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Then("Login with admin user")
+public void login_with_admin_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Go to PIM Tab1")
+public void go_to_pim_tab1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hit Add Employee section")
+public void hit_add_employee_section() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("don’t enter all mandatory user details")
+public void don_t_enter_all_mandatory_user_details() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("hit save button")
+public void hit_save_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("search the user")
+public void search_the_user() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Given("validate the user not getting searched")
+public void validate_the_user_not_getting_searched() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

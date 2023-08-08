@@ -1,0 +1,17 @@
+package aho;
+
+public class Add {
+
+	
+		public int add(int x, int y) {
+
+		return (x + y);
+
+		}
+	public static void main(String[] args) {
+		Add a = new Add();
+
+		System.out.println(a.add(25, 30));
+	}
+
+}

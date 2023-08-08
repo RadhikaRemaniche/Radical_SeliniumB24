@@ -1,0 +1,13 @@
+package oopsconcepts.inheritance;
+
+public class MethodOverloadingTest {
+
+	public static void main(String[] args) {
+
+		MethodOverloading obj=new MethodOverloading();
+		obj.createUser(10);
+		obj.createUser("John");
+		obj.createUser(11,"Grace");
+		obj.createUser("Fizz",12,"fizz@gmail.com");
+	}
+}

@@ -1,0 +1,9 @@
+package oopsconcepts.abstraction;
+
+public class AbstractionclassTest {
+	public static void main(String[] args) {
+		AbstractionChildClass1 obj = new AbstractionChildClass1();
+		obj.method1();
+	}
+
+}

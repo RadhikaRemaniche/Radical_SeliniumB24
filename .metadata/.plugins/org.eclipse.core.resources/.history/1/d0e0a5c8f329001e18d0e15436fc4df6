@@ -1,0 +1,5 @@
+Feature: Validate demoQA application data 
+
+		Scenario: 1.Validate demoQA up and running
+				Given hit the URI
+				Then validate response of the application

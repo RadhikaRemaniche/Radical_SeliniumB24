@@ -1,0 +1,13 @@
+Feature: Validate get request
+
+Scenario: 1.Validate demoQA up and running
+	Given hit the URI
+	Then validate title "Learning JavaScript Design Patterns" and pages "254" of application 
+	
+	
+	Scenario: 2.Validate demoQA up and running
+	Given hit the URI
+	Then validate title "Git Pocket Guide" of application 
+	And validate isbn "9781449325862" of application 
+	And validate author "Richard E. Silverman" of application 
+	Then validate publisher "O'Reilly Media" of application

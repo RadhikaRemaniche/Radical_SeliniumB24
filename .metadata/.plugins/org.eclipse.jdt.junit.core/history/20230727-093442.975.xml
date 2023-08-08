@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerFileForAllTest" project="RestAssuredALLInOneProject" tests="8" started="8" failures="0" errors="8" ignored="0">
+  <testsuite name="com.aLLInOne.RunnerFileForAllTest" time="0.583">
+    <testsuite name="This file contains test scenarios of add employee and validating the demoQA application" time="0.583">
+      <testcase name="1.Validate New employee getting created and searched in HRMS System" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.43">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="2.Validate employee not getting created if mandatory fields missing." classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.031">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="3.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.019">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="5.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.024">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="6.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.014">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="7.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.019">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="8.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.024">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="9.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.019">
+        <error>java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.login_with_admin_user(StepDefFileForAll.java:23)&#13;
+	at ✽.Login with admin user(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

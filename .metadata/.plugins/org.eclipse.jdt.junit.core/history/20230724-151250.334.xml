@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerApplicationUPTest" project="Radical_cucumberB24" tests="4" started="4" failures="0" errors="3" ignored="0">
+  <testsuite name="com.ApplicationUP.RunnerApplicationUPTest" time="3.177">
+    <testsuite name="Validate demoQA application data" time="3.177">
+      <testcase name="1.Validate demoQA up and running #1" classname="Validate demoQA application data" time="1.805"/>
+      <testcase name="1.Validate demoQA up and running #2" classname="Validate demoQA application data" time="0.468">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'validate response of  "200" the application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("validate response of  {string} the application")
+public void validate_response_of_the_application(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="1.Validate demoQA up and running #3" classname="Validate demoQA application data" time="0.452">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'validate response of "201" the application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("validate response of {string} the application")
+public void validate_response_of_the_application(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="1.Validate demoQA up and running #4" classname="Validate demoQA application data" time="0.451">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'validate response of "203" the application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("validate response of {string} the application")
+public void validate_response_of_the_application(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

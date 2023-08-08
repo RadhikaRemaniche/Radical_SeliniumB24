@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerApplicationUPTest" project="Radical_cucumberB24" tests="3" started="3" failures="2" errors="1" ignored="0">
+  <testsuite name="com.ApplicationUP.RunnerApplicationUPTest" time="2.798">
+    <testsuite name="Validate demoQA application data" time="2.798">
+      <testcase name="1.Validate demoQA up and running" classname="Validate demoQA application data" time="1.848">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'validate response "200" of the application' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("validate response {string} of the application")
+public void validate_response_of_the_application(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="2.Validate demoQA up and running" classname="Validate demoQA application data" time="0.507">
+        <failure>
+          <expected>201</expected>
+          <actual>io.restassured.internal.RestAssuredResponseImpl@28e8888d</actual>
+          org.junit.ComparisonFailure: expected:&lt;[201]&gt; but was:&lt;[io.restassured.internal.RestAssuredResponseImpl@28e8888d]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at com.ApplicationUP.ApplicationUPStepDef.validate_the_response_of_the_application(ApplicationUPStepDef.java:31)&#13;
+	at ✽.validate the response "201" of the application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_cucumberB24/src/test/resources/com/ApplicationUP/ValidateAplicationUP.feature:15)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+      <testcase name="3.Validate demoQA up and running" classname="Validate demoQA application data" time="0.442">
+        <failure>
+          <expected>202</expected>
+          <actual>io.restassured.internal.RestAssuredResponseImpl@33e0c716</actual>
+          org.junit.ComparisonFailure: expected:&lt;[202]&gt; but was:&lt;[io.restassured.internal.RestAssuredResponseImpl@33e0c716]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:117)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:146)&#13;
+	at com.ApplicationUP.ApplicationUPStepDef.validate_the_response_of_the_application(ApplicationUPStepDef.java:31)&#13;
+	at ✽.validate the response "202" of the application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_cucumberB24/src/test/resources/com/ApplicationUP/ValidateAplicationUP.feature:20)&#13;
+&#13;
+
+        </failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

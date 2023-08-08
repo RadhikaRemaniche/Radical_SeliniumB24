@@ -1,0 +1,66 @@
+package TestCases.PIM;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import POM.LoginPOM.LoginToAccount;
+
+public class AddEmployeeScenarios{
+
+	@Test
+	public void addEmpMandatoryFieldSuccess(WebDriver driver)
+ {
+		LoginToAccount login = new LoginToAccount();
+		driver.get("");
+		login.enterUserName("Admin",driver);
+		login.enterUserPwd(driver, "admin123");
+		
+	}
+
+	@Test
+	public void addEmpAllFieldSuccess() {
+
+	}
+
+	@Test
+	public void addEmpEmptyFieldError() {
+
+	}
+
+	@Test
+	public void addEmpSaveButtonSuccess() {
+
+	}
+
+	@Test
+	public void addEmpCancelButtonSuccess() {
+
+	}
+	@Test 
+	public void addEmpFieldsMaxLength() {
+		
+	}
+	@Test 
+	public void addEmpFieldsMinimumLength() {
+		
+	}
+	@Test 
+	public void addEmpConfirmPasswordValidation() {
+		
+	}
+	@Test 
+	public void addEmpAsetrikValidation() {
+		
+	}
+	@Test 
+	public void addEmpPageTimeOutValidation(){
+		
+	}
+	@Test 
+	public void addEmpUploadPhotoValidation(){
+		
+	}
+	public void addEmpPhotoDimensionsValidation() {
+	
+	}
+}

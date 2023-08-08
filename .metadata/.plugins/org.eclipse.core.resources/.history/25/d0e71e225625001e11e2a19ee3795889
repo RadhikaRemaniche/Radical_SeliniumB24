@@ -1,0 +1,87 @@
+package Login_Page;
+
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import PIM_Page.ReadExcelSheet1;
+import PIM_Page.useroperation_adduser;
+
+public class Validate_loginPage {
+
+	@Test
+	public void TestCase1(encap_loginpage addEmp) throws InterruptedException, IOException {
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("-----allow--remote--origins-----");
+		options.addArguments("-----disable--notifications-----");
+
+		System.out.println("Launching Browser");
+		ChromeDriver driver = new ChromeDriver(options);
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
+
+		encap_loginpage login = new encap_loginpage();
+
+		useroperation_loginpage user = new useroperation_loginpage();
+		useroperation_adduser addition = new useroperation_adduser();
+		ReadExcelSheet1 excelObj = new ReadExcelSheet1(
+				"C:\\Users\\radhi\\OneDrive\\Desktop\\MINE\\rad\\Software Testing course\\Newfolder\\OrangeHRM_Project1\\src\\PIM_Page\\adduser_page.xlsx",
+				0);
+
+//
+//		encap.setFirst_name("Heena");
+//		encap.setMiddle_name("Shitij");
+//		encap.setLast_name("Meheta");
+//		encap.setEmp_id(1025);
+//		encap.setAdduser_uname("heena.meheta");
+//		encap.setAdduser_pwd("dsgs223$");
+//		encap.setAdduser_confirmpwd("dsgs223$");
+
+		login.setUsername("Admin");
+		login.setPassword("admin123");
+
+		int rowCount = excelObj.getRowCount(0);
+		Object[][] data = new Object[rowCount][8];
+		for (int i = 0; i < rowCount; i++) {
+			encap_loginpage addEmp1 = new encap_loginpage();
+
+			data[i][0] = excelObj.getCellData(0, i, 0);
+			addEmp1.setFirst_name(data[i][0] + "");
+			System.out.println(data[i][0]);
+			data[i][1] = excelObj.getCellData(0, i, 1);
+			addEmp1.setFirst_name(data[i][1] + "");
+			System.out.println(data[i][1]);
+			data[i][2] = excelObj.getCellData(0, i, 2);
+			addEmp1.setFirst_name(data[i][2] + "");
+			System.out.println(data[i][2]);
+			data[i][3] = excelObj.getCellData(0, i, 3);
+			addEmp1.setFirst_name(data[i][3] + "");
+			System.out.println(data[i][3]);
+			data[i][4] = excelObj.getCellData(0, i, 4);
+			addEmp1.setFirst_name(data[i][4] + "");
+			System.out.println(data[i][4]);
+			data[i][5] = excelObj.getCellData(0, i, 5);
+			addEmp1.setFirst_name(data[i][5] + "");
+			System.out.println(data[i][5]);
+			data[i][6] = excelObj.getCellData(0, i, 6);
+			addEmp1.setFirst_name(data[i][6] + "");
+			System.out.println(data[i][6]);
+			data[i][7] = excelObj.getCellData(0, i, 7);
+			addEmp1.setFirst_name(data[i][7] + "");
+			System.out.println(data[i][7]);
+		}
+
+		//System.out.println(data);
+
+		user.create_usernameandPassword(login, driver);
+		addition.add_user(login, driver);
+	}
+
+}

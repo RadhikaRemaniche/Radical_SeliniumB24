@@ -1,0 +1,30 @@
+package com.GetValidateValuesWithParamSD;
+
+import org.junit.Assert;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GetValidation {
+
+	Response response;
+	@Given("hit the URI")
+	public void hit_the_uri() {
+		response = RestAssured.get("https://demoqa.com/BookStore/v1/Books");
+		System.out.println("got the response");
+	}
+	@Then("validate title {string} and pages {string} of application")
+	public void validate_title_and_pages_of_application(String title, String int1) {
+		
+		String dataString = response.getBody().asString();//get the actual content from the uri 
+		System.out.println("All Data ==== " +dataString);//printing above data 
+		String actualTitleString= response.getBody().jsonPath().getString("books[1].title");// getting the book with title
+		Assert.assertTrue(actualTitleString.equals(title));//if equal return true
+		int pagesInt=response.getBody().jsonPath().getInt("books[1].pages");
+		String pagesString =""+pagesInt;//convert int to string 
+		Assert.assertEquals(pagesString,int1);
+	    
+	}
+}

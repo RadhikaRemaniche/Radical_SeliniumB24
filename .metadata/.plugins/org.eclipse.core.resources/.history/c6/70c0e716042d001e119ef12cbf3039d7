@@ -1,0 +1,5 @@
+Feature: To validate add employee
+
+Scenario: 1. validate the employee 
+			Given hit the URI3
+			Then validate getting all employee data where the response is "200" of the application

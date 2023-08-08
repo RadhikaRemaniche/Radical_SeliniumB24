@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RunnerFileForAllTest" project="RestAssuredALLInOneProject" tests="8" started="8" failures="0" errors="6" ignored="0">
+  <testsuite name="com.aLLInOne.RunnerFileForAllTest" time="0.351">
+    <testsuite name="This file contains test scenarios of add employee and validating the demoQA application" time="0.351">
+      <testcase name="1.Validate New employee getting created and searched in HRMS System" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.255"/>
+      <testcase name="2.Validate employee not getting created if mandatory fields missing." classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.016"/>
+      <testcase name="3.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.027">
+        <error>java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.then()" because "this.response" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_response_of_the_application(StepDefFileForAll.java:82)&#13;
+	at ✽.validate response of the application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:23)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="4.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.013">
+        <error>java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.then()" because "this.response" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_the_response_of_the_application(StepDefFileForAll.java:90)&#13;
+	at ✽.validate the response "201" of the application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:26)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="5.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.01">
+        <error>java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.then()" because "this.response" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_the_response_of_the_application(StepDefFileForAll.java:90)&#13;
+	at ✽.validate the response "202" of the application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:30)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="6.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.008">
+        <error>java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_title_and_pages_of_application(StepDefFileForAll.java:98)&#13;
+	at ✽.validate title "Learning JavaScript Design Patterns" and pages "254" of application(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:33)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="7.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.012">
+        <error>java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_value_for_is(StepDefFileForAll.java:110)&#13;
+	at ✽.validate value for "books[0].title" is "Git Pocket Guide"(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:36)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="8.Validate demoQA up and running" classname="This file contains test scenarios of add employee and validating the demoQA application" time="0.009">
+        <error>java.lang.NullPointerException: Cannot invoke "io.restassured.response.Response.getBody()" because "this.response" is null&#13;
+	at com.aLLInOne.StepDefFileForAll.validate_value_for_attribute_is_present_in_response(StepDefFileForAll.java:117)&#13;
+	at ✽.validate value for attribute "title" is "Git Pocket Guide" present in response(file:///C:/Users/radhi/OneDrive/Desktop/MINE/rad/Software%20Testing%20course/New%20folder/Radical_SeliniumB24/RestAssuredALLInOneProject/src/test/resources/com/aLLInOne/ALLInOneFeatureFiles.feature:43)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

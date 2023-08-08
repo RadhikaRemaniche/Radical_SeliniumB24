@@ -1,0 +1,21 @@
+package com.addEmployeeStepDef;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class addEmpSD {
+	Response response;
+	@Given("hit the URI3")
+	public void hit_the_uri3() {
+		response = RestAssured.get("https://dummy.restapiexample.com/api/v1/employees");
+		System.out.println("Get the response");
+	}
+
+	@Then("validate getting all employee data")
+	public void validate_getting_all_employee_data() {
+	   String data=response.getBody().asString();
+	   System.out.println("All employee data ==== \n" +data);
+	}
+}
